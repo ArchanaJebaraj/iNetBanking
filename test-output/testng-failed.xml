@@ -9,9 +9,11 @@
     <classes>
       <class name="com.inetbanking.testCases.TC_AddCustomerTest_003">
         <methods>
+          <include name="startReport"/>
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="addNewCustomer"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- com.inetbanking.testCases.TC_AddCustomerTest_003 -->
     </classes>

@@ -12,6 +12,7 @@ public class TC_LoginTest_001 extends BaseClass {
 
 	@Test
 	public void loginTest() throws IOException {
+		test = extent.createTest("login test", "Login test");
 		driver.get(baseURL);
 		//logger.info("URL is opened");
 		LoginPage lp=new LoginPage(driver);

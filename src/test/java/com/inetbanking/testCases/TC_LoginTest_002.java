@@ -16,7 +16,8 @@ public class TC_LoginTest_002 extends BaseClass {
 
 	@Test(dataProvider="loginDataValue") 
 	       public void loginTest(String userData, String
-			pwdData) throws InterruptedException { 
+			pwdData) throws InterruptedException {
+		test = extent.createTest("login test 2", "From external report");
 		    LoginPage lp=new LoginPage(driver);
 		    driver.get(baseURL);
 			lp.setUserName(userData); 

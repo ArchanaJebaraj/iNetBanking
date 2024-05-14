@@ -19,7 +19,8 @@ public class Reporting  implements ITestListener {
 	
 	  public ExtentSparkReporter sparkReporter;
 	  
-	  public ExtentTest test; ExtentReports extent = new ExtentReports(); String
+	  public ExtentTest test; ExtentReports extent = new ExtentReports();
+	  String
 	  repName;
 	  
 	  public void onStart() { String timeStamp=new

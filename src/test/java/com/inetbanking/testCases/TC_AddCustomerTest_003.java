@@ -18,6 +18,7 @@ import com.inetbanking.pageObjects.LoginPage;
 public class TC_AddCustomerTest_003 extends BaseClass {
 	@Test
 	public void addNewCustomer() throws InterruptedException, IOException {
+		test = extent.createTest("Add customer", "Adding customer details");
 		LoginPage lp=new LoginPage(driver);
 		driver.get(baseURL);
 		lp.setUserName(userName);
