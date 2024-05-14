@@ -1,0 +1,15 @@
+node
+{
+	stage('CheckOut')
+    {
+		checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'GitClone', url: 'https://github.com/ArchanaJebaraj/iNetBanking']]])
+	}
+	stage('Build')
+	{
+		bat 'mvn clean compile'
+	}
+	stage('RunTest')
+	{
+		bat 'mvn test'
+	}
+}
